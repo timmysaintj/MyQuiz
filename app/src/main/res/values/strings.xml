@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Question Everything</string>
+    <string name="edit_name">Please enter your name</string>
+    <string name="name_hint">Enter your name to continue</string>
+    <string name="instructions">This is a nonsensical quiz with general questions, no particular theme. Enjoy!! Scroll down, answer the questions. Click the \"Submit\" button when finished to see the results.</string>
+    <string name="correct_answers">Correct Answers:</string>
+    <string name="quiz_results_tv">Quiz Results:</string>
+
+    <!-- Question strings -->
+    <string name="header_q1">Question #1</string>
+    <string name="header_q2">Question #2</string>
+    <string name="header_q3">Question #3</string>
+    <string name="header_q4">Question #4</string>
+    <string name="header_q5">Question #5</string>
+    <string name="header_q6">Question #6</string>
+    <string name="header_q7">Question #7</string>
+    <string name="header_q8">Question #8</string>
+    <string name="header_q9">Question #9</string>
+    <string name="header_q10">Question #10</string>
+    <string name="header_bonus">Bonus Question</string>
+
+    <!-- Question #1 -->
+    <string name="question_one">If you have 1 bucket that holds 2 gallons, and another bucket that holds 5 gallons.
+    How many buckets do you have?</string>
+
+    <!-- Radio button answers to question #1 -->
+    <string name="q1_a1">A\: 7</string>
+    <string name="q1_a2">B\: 2</string>
+    <string name="q1_a3">C\: 10</string>
+    <string name="q1_a4">D\: 2.5</string>
+
+    <!-- Question #2 -->
+    <string name="question_two">Which NFL teams did Lyle Alzado play for?</string>
+
+    <!-- Checkbox answers to question #2 -->
+    <string name="q2_a1">A\: Denver Broncos</string>
+    <string name="q2_a2">B\: Oakland Raiders</string>
+    <string name="q2_a3">C\: Tennessee Titans</string>
+    <string name="q2_a4">D\: Los Angeles Raiders</string>
+    <string name="q2_a5">E\: Cleveland Browns</string>
+
+    <!-- Question #3 -->
+    <string name="question_three">You have been invited to a Braai. What is it?</string>
+
+    <!-- Radio button answers to question #3 -->
+    <string name="q3_a1">A\: South American dance competition</string>
+    <string name="q3_a2">B\: South Central L.A. shootout</string>
+    <string name="q3_a3">C\: South African BBQ</string>
+    <string name="q3_a4">D\: South Dakota snipe hunt</string>
+
+    <!-- Question #4 -->
+    <string name="question_four">What language is this? ภาษาไทย</string>
+
+    <!-- Radio button answers to question #4 -->
+    <string name="q4_a1">A\: Cambodian</string>
+    <string name="q4_a2">B\: Laotian</string>
+    <string name="q4_a3">C\: Burmese</string>
+    <string name="q4_a4">D\: Thai</string>
+
+    <!-- Question #5 -->
+    <string name="question_five">Besides Gene Wilder, who else has played Willy Wonka?</string>
+
+    <!-- Checkbox answers to question #5 -->
+    <string name="q5_a1">A\: Johnny Depp</string>
+    <string name="q5_a2">B\: Blaire Dunlop</string>
+    <string name="q5_a3">C\: Freddie Highmore</string>
+    <string name="q5_a4">D\: David Morris</string>
+
+    <!-- Question #6 -->
+    <string name="question_six">Where are these pagodas?</string>
+
+    <!-- Radio button answer to question #6 -->
+    <string name="q6_a1">A\: Cambodia</string>
+    <string name="q6_a2">B\: Vietnam</string>
+    <string name="q6_a3">C\: Thailand</string>
+    <string name="q6_a4">D\: Burma</string>
+
+    <!-- Question #7 -->
+    <string name="question_seven">Jim Backus is famous for which characters?</string>
+
+    <!-- Checkbox answers to question #7 -->
+    <string name="q7_a1">A\: Mr. Magoo</string>
+    <string name="q7_a2">B\: Grandpa Munster</string>
+    <string name="q7_a3">C\: Thurston Howell III</string>
+    <string name="q7_a4">D\: Yogi Bear</string>
+
+    <!-- Question #8 -->
+    <string name="question_eight">A Case of Need was written under the pseudonym Jeffery Hudson.\nWho is the real author?</string>
+
+    <!-- Answers to question #8 -->
+    <string name="q8_a1">A\: Stephen King</string>
+    <string name="q8_a2">B\: Aldous Huxley</string>
+    <string name="q8_a3">C\: Victor Hugo</string>
+    <string name="q8_a4">D\: Michael Crichton</string>
+
+    <!-- Question #9 -->
+    <string name="question_nine">The following is the official name for what Capital City?\n\n
+    Krung Thep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit</string>
+
+    <!-- Answers to question #9 -->
+    <string name="q9_a1">A\: Bangkok</string>
+    <string name="q9_a2">B\: Seoul</string>
+    <string name="q9_a3">C\: New Delhi</string>
+    <string name="q9_a4">D\: Vientiane</string>
+
+    <!-- Question #10 -->
+    <string name="question_ten">What are the famous works by Homer?</string>
+
+    <!-- Answers to question #10 -->
+    <string name="q10_a1">A\: The Iliad</string>
+    <string name="q10_a2">B\: The Nostoi</string>
+    <string name="q10_a3">C\: The Odyssey</string>
+    <string name="q10_a4">D\: The Cypria</string>
+
+    <!-- Bonus Question -->
+    <string name="bonus_question">Complete the following tongue twister:\n How much wood would a woodchuck chuck...</string>
+    <!-- Bonus Question Answer -->
+    <string name="answer">if a woodchuck could chuck wood?</string>
+
+    <!-- Submit button -->
+    <string name="submit_button">Submit for Results</string>
+
+    <!-- Resubmit button, in case you changed your mind -->
+    <string name="resubmit_button">Reset to make changes</string>
+
+    <!-- Correct Answers for the quiz -->
+    <string name="correct_answer_answers">
+        1. B \n2. A, D, E \n3. C \n4. D \n5. A, B \n6. D \n7. A, C \n8. D \n9. A \n10. A, C \nBonus: if a woodchuck could chuck wood?
+    </string>
+
+</resources>
