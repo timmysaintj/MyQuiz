@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.tim.myquiz.MainActivity">
+
+        <ImageView
+            android:id="@+id/nerdy_face_icon"
+            style="@style/EmojiAlign"
+            android:src="@drawable/nerd" />
+
+        <ImageView
+            android:id="@+id/nerdy_face_icon2"
+            style="@style/EmojiAlign"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/nerdy_face_icon"
+            android:src="@drawable/nerd" />
+
+        <ImageView
+            android:id="@+id/nerdy_face_icon3"
+            style="@style/EmojiAlign"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/nerdy_face_icon"
+            android:src="@drawable/nerd" />
+
+        <View
+            android:id="@+id/view_bar_1"
+            style="@style/DivideLine"
+            android:layout_below="@id/nerdy_face_icon" />
+
+        <TextView
+            android:id="@+id/instructions_tv"
+            style="@style/instructions"
+            android:layout_below="@id/nerdy_face_icon"
+            android:paddingHorizontal="8dp"
+            android:text="@string/instructions" />
+
+        <View
+            android:id="@+id/view_bar_2"
+            style="@style/DivideLine"
+            android:layout_below="@id/instructions_tv" />
+
+        <!-- Question #1 Header -->
+        <TextView
+            android:id="@+id/q1_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_2"
+            android:text="@string/header_q1" />
+
+        <!--Question #1-->
+        <TextView
+            android:id="@+id/question_one_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q1_header_tv"
+            android:text="@string/question_one" />
+
+        <!--Question #1 Answers-->
+        <RadioGroup
+            android:id="@+id/radio_group_q1"
+            style="@style/RadioGroup"
+            android:layout_below="@id/question_one_tv">
+
+            <RadioButton
+                android:id="@+id/radio_q1_a1"
+                style="@style/RadioButtons"
+                android:text="@string/q1_a1" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_a2"
+                style="@style/RadioButtons"
+                android:text="@string/q1_a2" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_a3"
+                style="@style/RadioButtons"
+                android:text="@string/q1_a3" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_a4"
+                style="@style/RadioButtons"
+                android:text="@string/q1_a4" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_bar_3"
+            style="@style/DivideLine"
+            android:layout_below="@id/radio_group_q1" />
+
+        <!-- Question #2 Header -->
+        <TextView
+            android:id="@+id/q2_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_3"
+            android:text="@string/header_q2" />
+
+        <!--Question #2-->
+        <TextView
+            android:id="@+id/question_two_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q2_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_two" />
+
+        <!--Question #2 Answers-->
+        <CheckBox
+            android:id="@+id/q2_answer_broncos_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/question_two_tv"
+            android:text="@string/q2_a1" />
+
+        <CheckBox
+            android:id="@+id/q2_answer_ok_raiders_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q2_answer_broncos_cb"
+            android:text="@string/q2_a2" />
+
+        <CheckBox
+            android:id="@+id/q2_answer_titans_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q2_answer_ok_raiders_cb"
+            android:text="@string/q2_a3" />
+
+        <CheckBox
+            android:id="@+id/q2_answer_la_raiders_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q2_answer_titans_cb"
+            android:text="@string/q2_a4" />
+
+        <CheckBox
+            android:id="@+id/q2_answer_browns_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q2_answer_la_raiders_cb"
+            android:text="@string/q2_a5" />
+
+        <View
+            android:id="@+id/view_bar_4"
+            style="@style/DivideLine"
+            android:layout_below="@id/q2_answer_browns_cb" />
+
+        <!-- Question #3 Header -->
+        <TextView
+            android:id="@+id/q3_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_4"
+            android:text="@string/header_q3" />
+
+        <!--Question #3 -->
+        <TextView
+            android:id="@+id/question_three_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q3_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_three" />
+
+        <!--Question #3 Answers -->
+        <RadioGroup
+            android:id="@+id/radio_group_q3"
+            style="@style/RadioGroup"
+            android:layout_below="@id/question_three_tv">
+
+            <RadioButton
+                android:id="@+id/radio_q3_a1"
+                style="@style/RadioButtons"
+                android:text="@string/q3_a1" />
+
+            <RadioButton
+                android:id="@+id/radio_q3_a2"
+                style="@style/RadioButtons"
+                android:text="@string/q3_a2" />
+
+            <RadioButton
+                android:id="@+id/radio_q3_a3"
+                style="@style/RadioButtons"
+                android:text="@string/q3_a3" />
+
+            <RadioButton
+                android:id="@+id/radio_q3_a4"
+                style="@style/RadioButtons"
+                android:text="@string/q3_a4" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_bar_5"
+            style="@style/DivideLine"
+            android:layout_below="@id/radio_group_q3" />
+
+        <!-- Question #4 Header -->
+        <TextView
+            android:id="@+id/q4_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_5"
+            android:text="@string/header_q4" />
+
+        <!--Question #4 -->
+        <TextView
+            android:id="@+id/question_four_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q4_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_four" />
+
+        <!--Question #4 Answers-->
+        <RadioGroup
+            android:id="@+id/radio_group_q4"
+            style="@style/RadioGroup"
+            android:layout_below="@id/question_four_tv">
+
+            <RadioButton
+                android:id="@+id/radio_q4_a1"
+                style="@style/RadioButtons"
+                android:text="@string/q4_a1" />
+
+            <RadioButton
+                android:id="@+id/radio_q4_a2"
+                style="@style/RadioButtons"
+                android:text="@string/q4_a2" />
+
+            <RadioButton
+                android:id="@+id/radio_q4_a3"
+                style="@style/RadioButtons"
+                android:text="@string/q4_a3" />
+
+            <RadioButton
+                android:id="@+id/radio_q4_a4"
+                style="@style/RadioButtons"
+                android:text="@string/q4_a4" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_bar_6"
+            style="@style/DivideLine"
+            android:layout_below="@id/radio_group_q4" />
+
+        <!-- Question #5 Header -->
+        <TextView
+            android:id="@+id/q5_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_6"
+            android:text="@string/header_q5" />
+
+        <!-- Question #5 -->
+        <TextView
+            android:id="@+id/question_five_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q5_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_five" />
+
+        <!-- Question #5 Answers -->
+        <CheckBox
+            android:id="@+id/q5_answer_johnny_depp_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/question_five_tv"
+            android:text="@string/q5_a1" />
+
+        <CheckBox
+            android:id="@+id/q5_answer_blaire_dunlop_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q5_answer_johnny_depp_cb"
+            android:text="@string/q5_a2" />
+
+        <CheckBox
+            android:id="@+id/q5_answer_freddie_highmore_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q5_answer_blaire_dunlop_cb"
+            android:text="@string/q5_a3" />
+
+        <CheckBox
+            android:id="@+id/q5_answer_david_morris_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q5_answer_freddie_highmore_cb"
+            android:text="@string/q5_a4" />
+
+        <View
+            android:id="@+id/view_bar_7"
+            style="@style/DivideLine"
+            android:layout_below="@id/q5_answer_david_morris_cb" />
+
+        <!-- Question #6 Header -->
+        <TextView
+            android:id="@+id/q6_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_7"
+            android:text="@string/header_q6" />
+
+        <!-- Question #6 drawable -->
+        <ImageView
+            android:id="@+id/pagoda_burma"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/q6_header_tv"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pagoda_burma" />
+
+        <!-- Question #6 -->
+        <TextView
+            android:id="@+id/question_six_tv"
+            style="@style/Questions"
+            android:layout_below="@id/pagoda_burma"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_six" />
+
+        <!-- Question #6 Answers -->
+        <RadioGroup
+            android:id="@+id/radio_group_q6"
+            style="@style/RadioGroup"
+            android:layout_below="@id/question_six_tv">
+
+            <RadioButton
+                android:id="@+id/radio_q6_a1"
+                style="@style/RadioButtons"
+                android:text="@string/q6_a1" />
+
+            <RadioButton
+                android:id="@+id/radio_q6_a2"
+                style="@style/RadioButtons"
+                android:text="@string/q6_a2" />
+
+            <RadioButton
+                android:id="@+id/radio_q6_a3"
+                style="@style/RadioButtons"
+                android:text="@string/q6_a3" />
+
+            <RadioButton
+                android:id="@+id/radio_q6_a4"
+                style="@style/RadioButtons"
+                android:text="@string/q6_a4" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_bar_8"
+            style="@style/DivideLine"
+            android:layout_below="@id/radio_group_q6" />
+
+        <!-- Question #7 Header -->
+        <TextView
+            android:id="@+id/q7_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/radio_group_q6"
+            android:text="@string/header_q7" />
+
+        <!-- Question #7 -->
+        <TextView
+            android:id="@+id/question_seven_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q7_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_seven" />
+
+        <!-- Question #7 Answers -->
+        <CheckBox
+            android:id="@+id/q7_answer_mr_magoo_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/question_seven_tv"
+            android:text="@string/q7_a1" />
+
+        <CheckBox
+            android:id="@+id/q7_answer_grandpa_munster_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q7_answer_mr_magoo_cb"
+            android:text="@string/q7_a2" />
+
+        <CheckBox
+            android:id="@+id/q7_answer_thurston_howell_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q7_answer_grandpa_munster_cb"
+            android:text="@string/q7_a3" />
+
+        <CheckBox
+            android:id="@+id/q7_answer_yogi_bear_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q7_answer_thurston_howell_cb"
+            android:text="@string/q7_a4" />
+
+        <View
+            android:id="@+id/view_bar_9"
+            style="@style/DivideLine"
+            android:layout_below="@id/q7_answer_yogi_bear_cb" />
+
+        <!-- Question #8 Header -->
+        <TextView
+            android:id="@+id/q8_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_9"
+            android:text="@string/header_q8" />
+
+        <!-- Question #8 -->
+        <TextView
+            android:id="@+id/question_eight_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q8_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_eight" />
+
+        <!-- Question #8 Answers -->
+        <RadioGroup
+            android:id="@+id/radio_group_q8"
+            style="@style/RadioGroup"
+            android:layout_below="@id/question_eight_tv">
+
+            <RadioButton
+                android:id="@+id/radio_q8_a1"
+                style="@style/RadioButtons"
+                android:text="@string/q8_a1" />
+
+            <RadioButton
+                android:id="@+id/radio_q8_a2"
+                style="@style/RadioButtons"
+                android:text="@string/q8_a2" />
+
+            <RadioButton
+                android:id="@+id/radio_q8_a3"
+                style="@style/RadioButtons"
+                android:text="@string/q8_a3" />
+
+            <RadioButton
+                android:id="@+id/radio_q8_a4"
+                style="@style/RadioButtons"
+                android:text="@string/q8_a4" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_bar_10"
+            style="@style/DivideLine"
+            android:layout_below="@id/radio_group_q8" />
+
+        <!-- Question #9 Header -->
+        <TextView
+            android:id="@+id/q9_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_10"
+            android:text="@string/header_q9" />
+
+        <!-- Question #9 -->
+        <TextView
+            android:id="@+id/question_nine_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q9_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_nine" />
+
+        <!-- Question #9 Answers -->
+        <RadioGroup
+            android:id="@+id/radio_group_q9"
+            style="@style/RadioGroup"
+            android:layout_below="@id/question_nine_tv">
+
+            <RadioButton
+                android:id="@+id/radio_q9_a1"
+                style="@style/RadioButtons"
+                android:text="@string/q9_a1" />
+
+            <RadioButton
+                android:id="@+id/radio_q9_a2"
+                style="@style/RadioButtons"
+                android:text="@string/q9_a2" />
+
+            <RadioButton
+                android:id="@+id/radio_q9_a3"
+                style="@style/RadioButtons"
+                android:text="@string/q9_a3" />
+
+            <RadioButton
+                android:id="@+id/radio_q9_a4"
+                style="@style/RadioButtons"
+                android:text="@string/q9_a4" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view_bar_11"
+            style="@style/DivideLine"
+            android:layout_below="@id/radio_group_q9" />
+
+        <!-- Question #10 Header -->
+        <TextView
+            android:id="@+id/q10_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/radio_group_q9"
+            android:text="@string/header_q10" />
+
+        <!-- Question #10 -->
+        <TextView
+            android:id="@+id/question_ten_tv"
+            style="@style/Questions"
+            android:layout_below="@id/q10_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/question_ten" />
+
+        <!-- Question #10 Answers -->
+        <CheckBox
+            android:id="@+id/q10_answer_iliad_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/question_ten_tv"
+            android:text="@string/q10_a1" />
+
+        <CheckBox
+            android:id="@+id/q10_answer_nostoi_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q10_answer_iliad_cb"
+            android:text="@string/q10_a2" />
+
+        <CheckBox
+            android:id="@+id/q10_answer_odyssey_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q10_answer_nostoi_cb"
+            android:text="@string/q10_a3" />
+
+        <CheckBox
+            android:id="@+id/q10_answer_cypria_cb"
+            style="@style/CheckboxAnswers"
+            android:layout_below="@id/q10_answer_odyssey_cb"
+            android:text="@string/q10_a4" />
+
+        <View
+            android:id="@+id/view_bar_12"
+            style="@style/DivideLine"
+            android:layout_below="@id/q10_answer_cypria_cb" />
+
+        <!-- Enter Name Header -->
+        <TextView
+            android:id="@+id/enter_name_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/view_bar_12"
+            android:text="@string/edit_name" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_name_header_tv"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/name_hint"
+            android:inputType="textCapWords" />
+
+        <!-- Bonus Question Header -->
+        <TextView
+            android:id="@+id/bonus_question_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/edit_name"
+            android:text="@string/header_bonus" />
+
+        <!-- Bonus Question Question -->
+        <TextView
+            android:id="@+id/bonus_question_tv"
+            style="@style/Questions"
+            android:layout_below="@id/bonus_question_header_tv"
+            android:layout_marginBottom="8dp"
+            android:text="@string/bonus_question" />
+
+        <EditText
+            android:id="@+id/bonus_question_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bonus_question_tv"
+            android:ems="10"
+            android:inputType="text" />
+
+        <View
+            android:id="@+id/view_bar_submit_button"
+            style="@style/DivideLine"
+            android:layout_below="@id/bonus_question_et" />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/ButtonClicks"
+            android:layout_below="@id/view_bar_submit_button"
+            android:onClick="submitScore"
+            android:text="@string/submit_button" />
+
+        <Button
+            android:id="@+id/reset_quiz_button"
+            style="@style/ButtonClicks"
+            android:layout_below="@id/submit_button"
+            android:onClick="resetQuizButton"
+            android:text="@string/resubmit_button" />
+
+        <View
+            android:id="@+id/view_bar_results"
+            style="@style/DivideLine"
+            android:layout_below="@id/reset_quiz_button" />
+
+        <ImageView
+            android:id="@+id/exploding_head_icon"
+            style="@style/EmojiAlign"
+            android:layout_below="@id/view_bar_results"
+            android:src="@drawable/exploding_head" />
+
+        <ImageView
+            android:id="@+id/exploding_head_icon2"
+            style="@style/EmojiAlign"
+            android:layout_below="@id/view_bar_results"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/exploding_head_icon"
+            android:src="@drawable/exploding_head" />
+
+        <ImageView
+            android:id="@+id/exploding_head_icon3"
+            style="@style/EmojiAlign"
+            android:layout_below="@id/view_bar_results"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/exploding_head_icon"
+            android:src="@drawable/exploding_head" />
+
+        <TextView
+            android:id="@+id/answers_header_tv"
+            style="@style/QuestionHeaders"
+            android:layout_below="@id/exploding_head_icon3"
+            android:layout_marginTop="32dp"
+            android:text="@string/correct_answers" />
+
+        <!--Question Answers-->
+        <TextView
+            android:id="@+id/all_answers"
+            style="@style/Questions"
+            android:layout_below="@id/answers_header_tv"
+            android:layout_marginBottom="16dp"
+            android:text="@string/correct_answer_answers" />
+
+    </RelativeLayout>
+</ScrollView>
